@@ -3,7 +3,7 @@
   ul.card-massage-types {
     display: flex;
     justify-content: flex-start;
-    margin: 1em 0 0 0;
+    margin: 0.6em 0 0 0;
     padding-left: 0;
   }
 
@@ -26,27 +26,53 @@
     background-color: #00d1cb;
   }
 
-  .card-massage-type.type-deep-tissue-massage {
+  /* .card-massage-type.type-deep-tissue-massage {
     background-color: #23e6a8;
-  }
+  } */
+
+  .card-massage-type.type-deep-tissue-massage {
+    background-color: #f2f2f2;
+    border-radius: 100px;
+    color: #333;
+    padding: 7px 15px;
+    font-size: 12px;
+    color: #444;
+}
 
   .card-massage-type.type-mobile-massage {
     background-color: #237ee6;
   }
   
-  .card-massage-type.type-swedish-massage {
+  /* .card-massage-type.type-swedish-massage {
     background-color: #006aa8;
     color: white;
+  } */
+  .card-massage-type.type-swedish-massage {
+  background-color: #f2f2f2;
+    border-radius: 100px;
+    color: #333;
+    padding: 7px 15px;
+    font-size: 12px;
+    color: #444;
   }
 
   .card-massage-type.type-couples-massage {
     background-color: #e62374;
   }
 
-  .card-massage-type.type-hot-stone-massage {
+  /* .card-massage-type.type-hot-stone-massage {
     background-color: #ff4646;
     color: white;
-  }
+  } */
+
+  .card-massage-type.type-hot-stone-massage {
+    background-color: #f2f2f2;
+    border-radius: 100px;
+    color: #333;
+    padding: 7px 15px;
+    font-size: 12px;
+    color: #444;
+}
 
   .card-massage-type.type-thai-massage {
     background-color: #bd6dff;

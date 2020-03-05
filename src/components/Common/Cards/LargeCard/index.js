@@ -63,6 +63,25 @@ const Container = styled.div`
     margin-left: -0.25em; 
     fill: #828585;
   }
+  .book-btn{
+    margin-top: 1.7em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    padding: 9px 32px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #23E6A8;
+    transition: all 0.5s;
+    color: #fff;
+    &:hover{
+      background: #6fefc6;
+    }
+  }
   @media only screen and (max-width: 665px) {
     margin: 0.5em auto;
   } 
@@ -73,12 +92,7 @@ const LargeCard = ({
 }) => {
   return (
     <Container>
-      <a
-        href={`${website}?utm_source=massagesbristol&utm_medium=display&utm_campaign=Premium%20Slot%20Promotion`}
-        className="massage-card"
-        rel="nofollow"
-        target="_blank"
-      >
+      <div className="massage-card" >
         <Img fluid={mainImage.fluid} className="card-img" />
         <div class="minutes">
           <p class="minutes-p minutes-p-1">60 – 90</p>
@@ -91,8 +105,16 @@ const LargeCard = ({
             <span>{address ? address : "Bristol, UK"}</span>
             </p>
           <TagContainer type="client" massageTypes={massageTypes} />
+          <button className="book-btn">
+              <a rel="nofollow"
+                 target="_blank"  
+                 href={`${website}?utm_source=massagesbristol&utm_medium=display&utm_campaign=Premium%20Slot%20Promotion`}
+              >
+                Book Now
+            </a>
+          </button>
         </div>
-      </a>
+      </div>
     </Container>
   )
 }
