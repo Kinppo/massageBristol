@@ -1,0 +1,138 @@
+/* Small screens - MOBILE */
+@media only screen {
+  ul.card-massage-types {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1em 0 0 0;
+    padding-left: 0;
+  }
+
+  li.card-massage-type {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0.125rem;
+    background-color: pink;
+    border-radius: 3px;
+
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+
+  /* Tag Colours -  */
+  .card-massage-type.type-sports-massage {
+    background-color: #00d1cb;
+  }
+
+  .card-massage-type.type-deep-tissue-massage {
+    background-color: #23e6a8;
+  }
+
+  .card-massage-type.type-mobile-massage {
+    background-color: #237ee6;
+  }
+  
+  .card-massage-type.type-swedish-massage {
+    background-color: #006aa8;
+    color: white;
+  }
+
+  .card-massage-type.type-couples-massage {
+    background-color: #e62374;
+  }
+
+  .card-massage-type.type-hot-stone-massage {
+    background-color: #ff4646;
+    color: white;
+  }
+
+  .card-massage-type.type-thai-massage {
+    background-color: #bd6dff;
+    color: white;
+
+  }
+
+  .card-massage-type.type-others {
+    background-color: black;
+    color: white;
+  }
+} /* Define mobile styles - Mobile First */
+
+@media only screen and (max-width: 40em) {
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* Medium screens - TABLET */
+@media only screen and (min-width: 40.063em) {
+  ul.card-massage-types {
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/* Large screens - DESKTOP */
+@media only screen and (min-width: 64.063em) {
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+} /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) {
+} /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) {
+} /* min-width 1921px, xlarge screens */
+
+/*------------------------------------------*/
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+  /* Portrait styles here */
+}
+/* Landscape */
+@media screen and (orientation: landscape) {
+  /* Landscape styles here */
+}
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+}
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation: portrait) {
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation: landscape) {
+}
+
+/*------------------------------------------
+        Live demo samples
+         - http://andrelion.github.io/mediaquery/livedemo.html
+      --------------------------------------------*/
