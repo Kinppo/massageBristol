@@ -46,6 +46,8 @@ const Container = styled.div`
   .card-info-content {
     align-items: unset;
     padding: 10px 15px;
+    display: grid;
+    grid-template-rows: 0.5fr 0.6fr 0.5fr 1fr; 
   }
   .card-name {
     font-size: 17px;
